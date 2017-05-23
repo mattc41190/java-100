@@ -1,2 +1,2 @@
-Main-Class: clock.Main
+Main-Class: simpledb.Main
 Class-Path: dependencies/mjson.jar

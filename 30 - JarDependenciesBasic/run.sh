@@ -7,8 +7,8 @@ javac -cp '.:dependencies/mjson.jar' -d . *.java
 # https://docs.oracle.com/javase/tutorial/deployment/jar/downman.html
 
 jar cfm \
-clock.jar \
+simpledb.jar \
 Manifest.txt \
-clock/*.class
+simpledb/*.class
 
-java -jar clock.jar
+java -jar simpledb.jar

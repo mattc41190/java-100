@@ -1,20 +1,19 @@
-package clock;
+package simpledb;
 
 import mjson.Json;
 
-
 public class Main {
    public static void main(String [] args) {
-       Clocker c = new Clocker();
-       c.tellTime();
-
-       Json coolAnimal = Json.object().set("name", "wolf")
+       Json db = Json.object();
+       Json coolAnimal = Json.object().set("species", "wolf")
                              .set("gender", "male")
                              .set("age", 0.0)
                              .set("moves", Json.array("run", "bite"));
 
-       String coolAnimalString = coolAnimal.toString();
-       coolAnimal.equals(Json.read(coolAnimalString));
-       System.out.println(coolAnimalString);
+        db.set("Jeff", coolAnimal);
+
+       String dbString = db.toString();
+       DbWriter dbWriter = new DbWriter();
+       dbWriter.writeDbToFile(dbString);
    }
 }
