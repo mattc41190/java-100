@@ -1,2 +1,2 @@
 Main-Class: clock.Main
-Class-Path: mjson.jar
+Class-Path: dependencies/mjson.jar

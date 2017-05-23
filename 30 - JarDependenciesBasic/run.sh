@@ -1,6 +1,6 @@
 # Compile sources
 
-javac -cp '.:mjson.jar' -d . *.java
+javac -cp '.:dependencies/mjson.jar' -d . *.java
 
 # Create JAR
 # Note that the manifest and the shell scripts work in conjunction quite a bit
